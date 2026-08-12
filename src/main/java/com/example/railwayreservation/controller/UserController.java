@@ -59,4 +59,8 @@ public class UserController {
 
     }
     
+    @PostMapping("/addAdmin")
+    public User addAdmin(@RequestBody User user) {
+        return service.addAdmin(user);
+    }
 }

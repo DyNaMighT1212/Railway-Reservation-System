@@ -16,6 +16,9 @@ public class UserService {
 
     // Register User
     public User addUser(User user) {
+
+        user.setRole("USER");
+
         return repo.save(user);
     }
 
@@ -44,10 +47,17 @@ public class UserService {
         repo.deleteById(id);
         return "User Deleted Successfully";
     }
+    
     public long getUserCount(){
 
         return repo.count();
 
     }
+    
+    public User addAdmin(User user) {
 
+        user.setRole("ADMIN");
+
+        return repo.save(user);
+    }
 }
