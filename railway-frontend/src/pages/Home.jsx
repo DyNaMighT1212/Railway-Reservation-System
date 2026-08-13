@@ -8,104 +8,139 @@ function Home() {
 
             {/* Hero Section */}
 
-            <div className="bg-primary text-white py-5">
+            <section className="bg-primary text-white py-5">
 
-                <div className="container text-center">
+                <div className="container">
 
-                    <h1 className="display-4 fw-bold">
-                        🚆 Railway Reservation System
-                    </h1>
+                    <div className="row align-items-center">
 
-                    <p className="lead mt-3">
-                        Book your train journey quickly and easily.
-                    </p>
+                        <div className="col-md-7">
 
-                    <Link
-                        to="/trains"
-                        className="btn btn-light btn-lg mt-3"
-                    >
-                        Search Trains
-                    </Link>
+                            <h1 className="display-4 fw-bold">
+                                Book Your Journey
+                                <br />
+                                With Ease 🚆
+                            </h1>
+
+                            <p className="lead mt-3">
+                                Search trains, book tickets and manage
+                                your railway reservations from one place.
+                            </p>
+
+                            <Link
+                                to="/trains"
+                                className="btn btn-light btn-lg mt-3"
+                            >
+                                Search Trains
+                            </Link>
+
+                        </div>
+
+
+                        <div className="col-md-5 text-center mt-4 mt-md-0">
+
+                            <div
+                                style={{
+                                    fontSize: "150px"
+                                }}
+                            >
+                                🚆
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
 
 
             {/* Features */}
 
-            <div className="container mt-5">
+            <section className="py-5">
 
-                <h2 className="text-center mb-4">
-                    Why Choose Us?
-                </h2>
+                <div className="container">
 
-                <div className="row">
+                    <h2 className="text-center fw-bold mb-5">
+                        Why Choose Us?
+                    </h2>
 
-                    <div className="col-md-4 mb-3">
-
-                        <div className="card text-center h-100 shadow-sm">
-
-                            <div className="card-body">
-
-                                <h3>🚆</h3>
-
-                                <h5 className="card-title">
-                                    Search Trains
-                                </h5>
-
-                                <p className="card-text">
-                                    Find trains between your source
-                                    and destination.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <div className="row">
 
 
-                    <div className="col-md-4 mb-3">
+                        <div className="col-md-4 mb-4">
 
-                        <div className="card text-center h-100 shadow-sm">
+                            <div className="card h-100 shadow-sm text-center">
 
-                            <div className="card-body">
+                                <div className="card-body p-4">
 
-                                <h3>🎫</h3>
+                                    <div className="fs-1">
+                                        🔍
+                                    </div>
 
-                                <h5 className="card-title">
-                                    Easy Booking
-                                </h5>
+                                    <h4 className="mt-3">
+                                        Easy Train Search
+                                    </h4>
 
-                                <p className="card-text">
-                                    Book your train tickets easily
-                                    through our system.
-                                </p>
+                                    <p className="text-muted">
+                                        Find trains quickly by entering
+                                        your source and destination.
+                                    </p>
+
+                                </div>
 
                             </div>
 
                         </div>
 
-                    </div>
+
+                        <div className="col-md-4 mb-4">
+
+                            <div className="card h-100 shadow-sm text-center">
+
+                                <div className="card-body p-4">
+
+                                    <div className="fs-1">
+                                        🎫
+                                    </div>
+
+                                    <h4 className="mt-3">
+                                        Simple Booking
+                                    </h4>
+
+                                    <p className="text-muted">
+                                        Book your seats quickly and get
+                                        your reservation confirmed.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
-                    <div className="col-md-4 mb-3">
+                        <div className="col-md-4 mb-4">
 
-                        <div className="card text-center h-100 shadow-sm">
+                            <div className="card h-100 shadow-sm text-center">
 
-                            <div className="card-body">
+                                <div className="card-body p-4">
 
-                                <h3>📖</h3>
+                                    <div className="fs-1">
+                                        📖
+                                    </div>
 
-                                <h5 className="card-title">
-                                    Manage Bookings
-                                </h5>
+                                    <h4 className="mt-3">
+                                        Manage Bookings
+                                    </h4>
 
-                                <p className="card-text">
-                                    View and cancel your bookings
-                                    whenever you need.
-                                </p>
+                                    <p className="text-muted">
+                                        View your bookings and cancel
+                                        tickets whenever required.
+                                    </p>
+
+                                </div>
 
                             </div>
 
@@ -115,10 +150,35 @@ function Home() {
 
                 </div>
 
-            </div>
+            </section>
+
+
+            {/* Call To Action */}
+
+            <section className="bg-light py-5">
+
+                <div className="container text-center">
+
+                    <h2 className="fw-bold">
+                        Ready to start your journey?
+                    </h2>
+
+                    <p className="text-muted">
+                        Search for your train and book your ticket today.
+                    </p>
+
+                    <Link
+                        to="/trains"
+                        className="btn btn-primary btn-lg"
+                    >
+                        Find a Train 🚆
+                    </Link>
+
+                </div>
+
+            </section>
 
         </div>
-
     );
 }
 
